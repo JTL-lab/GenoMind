@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Research Chat Assistant</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="chat-container">
-    <div id="chat-box" class="chat-box"></div>
-    <input type="text" id="user-input" placeholder="Ask your question...">
-    <button id="send-btn">Send</button>
-</div>
-<script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div>
+        <input type="file" id="pdfUploader" accept="application/pdf" />
+        <br />
+        <button onclick="uploadPDFs()">Upload PDF</button>
+      </div>
+      <div id="chat-box" class="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Ask your question..." />
+      <button id="send-btn">Send</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
