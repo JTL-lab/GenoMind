@@ -10,7 +10,7 @@ app.use(express.static("."));
 
 const OPENAI_API_URL = "https://api.openai.com/v1/engines/davinci/completions";
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "";
 
 app.post("/getResponse", async (req, res) => {
   const userMessage = req.body.message;
